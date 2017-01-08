@@ -17,8 +17,7 @@ var PhotoWall={
 			y: [0, 0]
 		},
 		vPosRange: {
-			leftSecX: [0, 0],
-			rightSecX: [0, 0],
+			topY: [0, 0],
 			x: [0, 0]
 		}
 	},
@@ -32,6 +31,8 @@ var PhotoWall={
 			}
 			return imageDatasArr;
 		})(imagesDatas);
+
+		//
 
 		var controllerUnits = [],
 			imgFigures = [];

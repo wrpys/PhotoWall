@@ -6,6 +6,22 @@ $(function(){
 
 var PhotoWall={
 	imagesDatas : [],
+	Constant: {
+		centerPos: {
+			left: 0,
+			right: 0
+		},
+		hPosRange: {
+			leftSecX: [0, 0],
+			rightSecX: [0, 0],
+			y: [0, 0]
+		},
+		vPosRange: {
+			leftSecX: [0, 0],
+			rightSecX: [0, 0],
+			x: [0, 0]
+		}
+	},
 	init:function(){
 		// 自执行函数 添加图片URL
 		PhotoWall.imagesDatas = (function(imageDatasArr){
@@ -16,8 +32,6 @@ var PhotoWall={
 			}
 			return imageDatasArr;
 		})(imagesDatas);
-
-		console.log(PhotoWall.imagesDatas);
 
 		var controllerUnits = [],
 			imgFigures = [];

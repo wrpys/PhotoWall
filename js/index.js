@@ -247,8 +247,9 @@ var PhotoWall={
 				top: styleObj.pos.top + 'px',
 				left: styleObj.pos.left + 'px'
 			}
-
-			if (i != centerIndex && styleObj.rotate) {
+			if(i == centerIndex) {
+				domStyle["z-index"] = "1001";
+			} else if (styleObj.rotate) {
 				for (var n = 0; n < hacks.length; n++) {
 					domStyle[hacks[n] + 'transform'] = 'rotate(' + styleObj.rotate + 'deg';
 				}

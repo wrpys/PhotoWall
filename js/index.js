@@ -207,7 +207,7 @@ var PhotoWall={
 	getRangeRandom: function(low, hight) {
 		return Math.ceil(Math.random() * (hight - low) + low);
 	},
-	// 获取30°之间的正负值
+	// 获取30°之间的正负值	
 	get30DegRandom: function() {
 		return ((Math.random() > 0.5 ? '' : '-') + Math.ceil(Math.random() * 30));
 	},
